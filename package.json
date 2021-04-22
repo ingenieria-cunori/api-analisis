@@ -1,6 +1,6 @@
 {
   "name": "api-analisis",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Mi primer ejemplo con lb4 con ADS2 2021",
   "keywords": [
     "loopback-application",
