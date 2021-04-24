@@ -1,9 +1,9 @@
 import {Getter, inject} from '@loopback/core';
-import {DefaultCrudRepository, HasManyRepositoryFactory, juggler, repository} from '@loopback/repository';
+import {DefaultTransactionalRepository, HasManyRepositoryFactory, juggler, repository} from '@loopback/repository';
 import {Persona, PersonaRelations, Telefono} from '../models';
 import {TelefonoRepository} from './telefono.repository';
 
-export class PersonaRepository extends DefaultCrudRepository<
+export class PersonaRepository extends DefaultTransactionalRepository<
   Persona,
   typeof Persona.prototype.idpersona,
   PersonaRelations
